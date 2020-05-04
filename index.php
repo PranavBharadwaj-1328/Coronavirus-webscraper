@@ -10,7 +10,7 @@
   <body>
     <center><h1 style="color:green;">Live Updates on Coronavirus (COVID-19) World-wide</h1></center>
     <?php
-     error_reporting(E_ERROR | E_PARSE);
+     error_reporting(E_ERROR | E_PARSE); //important line to avoid warnings in php
      $main_url = "https://www.worldometers.info/coronavirus/";
      $main_url2 = "http://tcovid19.herokuapp.com";
      $str1 = file_get_contents($main_url2);
@@ -35,7 +35,7 @@
       echo ("<div>");
       echo("<h1><a href='https://www.covid19india.org'>Indian stats</a></h1><br />");
       echo("<h2 style='color:red;'>Reported Cases: ".$ps[0]->nodeValue."</h2>");
-      echo("<h2 style='color:red;'>Total Deaths: ".$ss[6]->nodeValue."</h2>");
+      echo("<h2 style='color:red;'>Total Deaths: ".$ss[4]->nodeValue."</h2>");
       echo("<h2 style='color:green;'>Recovered: ".$ss[3]->nodeValue."</h2><br />");
       echo ("</div>");
       echo("</center>");
