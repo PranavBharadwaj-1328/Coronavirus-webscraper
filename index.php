@@ -35,7 +35,7 @@
       echo ("<div>");
       echo("<h1><a href='https://www.covid19india.org'>Indian stats</a></h1><br />");
       echo("<h2 style='color:red;'>Reported Cases: ".$ps[0]->nodeValue."</h2>");
-      echo("<h2 style='color:red;'>Total Deaths: ".$ss[4]->nodeValue."</h2>");
+      echo("<h2 style='color:red;'>Total Deaths: ".$ss[6]->nodeValue."</h2>");
       echo("<h2 style='color:green;'>Recovered: ".$ss[3]->nodeValue."</h2><br />");
       echo ("</div>");
       echo("</center>");
